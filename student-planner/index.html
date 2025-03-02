@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enter description" />
+    <title>Student planner</title>
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>Student Planner</h1>
+
+    <h3>
+      <strong>
+        Your personal tool to stay organized and manage your academic tasks.
+      </strong>
+    </h3>
+
+    <nav>
+      <a href="assignments.html"><strong>ASSIGNMENTS</strong></a>
+      <a href="upload.html"><strong> RESOURCES</strong></a>
+    </nav>
+    <hr />
+    <p>
+      A student planner is an invaluable tool for organizing tasks, setting up
+      goals and keep track of your deadlines and commitments.
+    </p>
+    <div>
+      <strong> Why use a student planner?</strong>
+      <ul type="square">
+        <li>
+          A student planner helps you to fix time for different tasks and
+          assignments, ensuring you stay on track with your deadlines.
+        </li>
+        <li>
+          By outlining the tasks you can prioritize and focus on whats
+          important.
+        </li>
+        <li>
+          Knowing what you need to do can help you to plan ahead and avoid last
+          minute rushes.
+        </li>
+        <li>
+          You can upload your notes and study materials. Which can help you to
+          revise for an upcoming exam.
+        </li>
+      </ul>
+    </div>
+
+    <section>
+      <hr />
+      <h2>Assingments</h2>
+      <p>
+        Assignments are essential in helping students develop task management
+        skills and maintain punctuality. By working on assignments, students
+        learn to prioritize tasks, set deadlines, and manage their time
+        effectively. Completing assignments on time teaches discipline and
+        responsibility, preparing students for real-world challenges where
+        meeting deadlines and staying organized are crucial for success.
+      </p>
+      <br />
+      <a href="assignments.html"><strong> Go to assignments</strong></a>
+      <hr />
+    </section>
+    <section>
+      <h2>Uploading Resources</h2>
+      <p>
+        Using resources like notes, tables, and study materials helps students
+        stay organized and efficient. Well-structured notes capture key
+        information, tables present data clearly, and study tools like
+        flashcards break down complex concepts. This systematic approach reduces
+        stress, keeps students on track, and leads to better academic
+        performance and higher grades.
+      </p>
+      <br />
+      <a href="upload.html"><strong> Upload your notes.</strong></a>
+      <hr />
+      <section>
+        <h2>Student information</h2>
+
+        <form action="submit.php" method="get">
+          <label for="Name"> Name :</label>
+          <input
+            type="text"
+            id="Name"
+            name="Name"
+            pattern="[A-Za-z]+"
+            placeholder="Enter name"
+          /><br />
+          <label for="Age"> Age :</label>
+          <input
+            type="number"
+            id="Age"
+            name="Age"
+            placeholder="age"
+            min="1"
+            max="100"
+          /><br />
+          <label for="Institute type"> Institute type</label>
+          <select name="Institute type" required>
+            <option value="School">School</option>
+            <option value="College">College</option>
+            <option value="Univarsity">University</option>
+            <option value="Others">others</option></select
+          ><br />
+
+          <label for="Sname"> Intitution Name</label>
+          <input
+            type="text"
+            id="Sname"
+            name="Sname"
+            placeholder="School/college/Varsity"
+          /><br />
+          <label for="Email"> Email</label>
+          <input
+            type="email"
+            id="Email"
+            name="Email"
+            placeholder="Example@gmail.com"
+            required
+          /><br />
+          <label for="tel">Telephone:</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            title="Format: 123-456-7890"
+            placeholder="phone number"
+          />
+        </form>
+      </section>
+      <button type="submit">Submit</button>
+    </section>
+  </body>
+</html>
